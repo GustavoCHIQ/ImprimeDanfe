@@ -22,15 +22,11 @@ object frmGeraDanfe: TfrmGeraDanfe
     Top = 0
     Width = 283
     Height = 179
-    ActivePage = tsNFSe
+    ActivePage = tsNFeNFCe
     Align = alClient
     TabOrder = 0
-    ExplicitWidth = 445
-    ExplicitHeight = 216
     object tsNFeNFCe: TTabSheet
       Caption = 'NFCe / NFE'
-      ExplicitWidth = 437
-      ExplicitHeight = 188
       object FileListBox1: TFileListBox
         Left = 0
         Top = 74
@@ -39,8 +35,6 @@ object frmGeraDanfe: TfrmGeraDanfe
         Align = alBottom
         ItemHeight = 13
         TabOrder = 0
-        ExplicitTop = 111
-        ExplicitWidth = 265
       end
       object btnGerarDanfe: TBitBtn
         Left = 45
@@ -88,9 +82,6 @@ object frmGeraDanfe: TfrmGeraDanfe
     object tsNFSe: TTabSheet
       Caption = 'NFSe'
       ImageIndex = 1
-      ExplicitLeft = 14
-      ExplicitWidth = 265
-      ExplicitHeight = 188
       object btnGerarNFSe: TBitBtn
         Left = 45
         Top = 12
@@ -137,9 +128,10 @@ object frmGeraDanfe: TfrmGeraDanfe
   end
   object OpenDialog1: TOpenDialog
     Left = 16
-    Top = 120
+    Top = 96
   end
   object ACBrNFeDANFEFR1: TACBrNFeDANFEFR
+    Sistema = 'Projeto ACBr - www.projetoacbr.com.br'
     MargemInferior = 8.000000000000000000
     MargemSuperior = 8.000000000000000000
     MargemEsquerda = 6.000000000000000000
@@ -159,8 +151,8 @@ object frmGeraDanfe: TfrmGeraDanfe
     EspessuraBorda = 1
     BorderIcon = [biSystemMenu, biMinimize, biMaximize]
     ThreadSafe = False
-    Left = 144
-    Top = 128
+    Left = 224
+    Top = 136
   end
   object ACBrNFe1: TACBrNFe
     Configuracoes.Geral.SSLLib = libNone
@@ -175,8 +167,8 @@ object frmGeraDanfe: TfrmGeraDanfe
     Configuracoes.WebServices.QuebradeLinha = '|'
     Configuracoes.RespTec.IdCSRT = 0
     DANFE = ACBrNFeDANFEFR1
-    Left = 101
-    Top = 122
+    Left = 125
+    Top = 90
   end
   object ACBrNFSe1: TACBrNFSe
     Configuracoes.Geral.SSLLib = libNone
@@ -195,10 +187,11 @@ object frmGeraDanfe: TfrmGeraDanfe
     Configuracoes.WebServices.AguardarConsultaRet = 0
     Configuracoes.WebServices.QuebradeLinha = '|'
     DANFSE = ACBrNFSeDANFSeFR1
-    Left = 53
-    Top = 124
+    Left = 125
+    Top = 140
   end
   object ACBrNFSeDANFSeFR1: TACBrNFSeDANFSeFR
+    Sistema = 'Projeto ACBr - www.projetoacbr.com.br'
     MargemInferior = 8.000000000000000000
     MargemSuperior = 8.000000000000000000
     MargemEsquerda = 6.000000000000000000
@@ -220,7 +213,7 @@ object frmGeraDanfe: TfrmGeraDanfe
     TamanhoFonte = 6
     FormatarNumeroDocumentoNFSe = True
     EspessuraBorda = 1
-    Left = 212
-    Top = 128
+    Left = 220
+    Top = 88
   end
 end
